@@ -93,7 +93,7 @@ body {
   color: var(--hero_text);
 }
 
-.hero__cta {
+.cta {
   display: flex;
   justify-content: center;
   width: fit-content;
@@ -132,6 +132,8 @@ body {
 .info__items {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
 }
 
 .info__item {
@@ -153,7 +155,7 @@ body {
   text-align: center;
   font-size: var(--info_font);
   font-weight: 400;
-  min-height: 30vh;
+  padding: 7rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +170,35 @@ body {
   justify-content: end;
   margin-top: 1rem;
   font-weight: 700;
+}
+
+.cta__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button_main);
+  border-radius: 5px;
+  padding: 3rem 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.cta__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.cta__text {
+  color: var(--hero_text);
+}
+
+.cta--secondary {
+  border: 2px solid var(--hero_text);
+  margin: 0;
 }
 
 .footer {
